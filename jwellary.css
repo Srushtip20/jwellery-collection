@@ -1,0 +1,164 @@
+body {
+  
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    font-family:serif;
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    animation: fadeInDown 2s 1;
+}
+.navbar:hover{
+    transform: scale(1.1);
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header nav a:hover{
+    color: burlywood;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url(back5.webp);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    transition: background-image 0.5s ease-in-out, transform 0.5s ease-in-out;
+   
+
+}
+.banner:hover {
+    transform: translateY(-10px);
+}
+
+.banner:hover img {
+    transform: scale(1.1);
+}
+
+.banner-content h2 {
+    font-size: 3em;
+    color: #fff;
+    animation: fadeInDown 2s infinite;
+
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    color: #fff;
+    animation: fadeInUp 2s infinite;
+}
+
+.btn {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #b38f2e;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.product-card p {
+    color: #666;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    bottom: 0cm;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
